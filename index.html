@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Spinners</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Hello There, welcome to the thunder dome</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat illum dolor, temporibus earum similique iste doloribus hic ut maxime neque perferendis, aspernatur nostrum, eligendi eos.</p>
+    </div>
+    <script>
+        document.querySelector('.main p').style.display = 'none';
+        document.querySelector('.main').classList.add('spinner-1');
+
+        setTimeout(() => {
+        document.querySelector('.main').classList.remove('spinner-1');
+        document.querySelector('.main p').style.display = 'block';
+        
+
+        }, 3000);
+    </script>
+</body>
+</html>
